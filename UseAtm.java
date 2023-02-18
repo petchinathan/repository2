@@ -24,6 +24,16 @@ public class UseAtm {
 		System.out.println(atm2.bankName+"-"+atm2.location+","+atm2.findCredit(atm2.mainBalance,atm2.creditAmount));
 		System.out.println(atm2.bankName+"-"+atm2.location+","+atm2.findDebit(atm2.mainBalance, atm2.withdrawelAmount));
 		
+		Atm atm3 = new Atm();
+		atm3.bankName = "iob";
+		atm3.location = "palavakkam";
+		atm3.creditAmount = 1000;
+		atm3.mainBalance = 5000;
+		atm3.withdrawelAmount = 2000;
+		
+		System.out.println(atm3.bankName+"-"+atm3.location+","+atm3.findCredit(atm3.mainBalance,atm3.creditAmount));
+		System.out.println(atm3.bankName+"-"+atm3.location+","+atm3.findDebit(atm3.mainBalance, atm3.withdrawelAmount));
+		
 	}
 
 }
